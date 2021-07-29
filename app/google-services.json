@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "77300568094",
+    "project_id": "the-transporter-2bfbf",
+    "storage_bucket": "the-transporter-2bfbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77300568094:android:48a2357fbcbecbd8b39e0f",
+        "android_client_info": {
+          "package_name": "com.example.thetransporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77300568094-kp6a046g8ng2btn0ghqicdahsd41mufu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVGxADQpcVy47rPuP6jxE0M8mEaBsqfQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77300568094-kp6a046g8ng2btn0ghqicdahsd41mufu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">The TRANSPORTER</string>
     <string name="signup">SignUp</string>
+    <string name="welcome_you_are_logged_in">Welcome, you are logged in</string>
+    <string name="logout">Logout</string>
 </resources>

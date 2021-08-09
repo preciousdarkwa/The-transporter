@@ -55,15 +55,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Fields are empty!", Toast.LENGTH_SHORT).show();
 
         } else if (!email.isEmpty() || !pwd.isEmpty()) {
-            mFirebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (!task.isSuccessful()) {
-                        Toast.makeText(MainActivity.this, "Signup unsuccessful, Please try again!", Toast.LENGTH_SHORT).show();
+            mFirebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(MainActivity.this, task -> {
+                if (!task.isSuccessful()) {
+                    Toast.makeText(MainActivity.this, "Signup unsuccessful, Please try again!", Toast.LENGTH_SHORT).show();
 
-                    } else {
-                        startActivity(new Intent(MainActivity.this, HomeActivity2.class));
-                    }
+                } else {
+                    startActivity(new Intent(MainActivity.this, HomeActivity2.class));
                 }
             });
         } else {
